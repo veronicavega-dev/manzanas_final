@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@extends('components.layouts.formulario')
+
+
 
 @section('content')
     <div class="container-fluid">
@@ -35,8 +38,10 @@
 
                 <div class="content">
                     <h1>Municipios</h1>
-                    <button type="submit">Agregar municipio</button>
-                </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar municipio
+                    </button>
+                 </div>
                 <div class="table">
                     <table class="table">
                         <thead class="thead-dark">
@@ -55,8 +60,13 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -65,8 +75,13 @@
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -75,8 +90,13 @@
                                 <td>the Bird</td>
                                 <td>@twitter</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>

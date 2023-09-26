@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@extends('components.layouts.formServicios')
+
 
 @section('content')
     <div class="container-fluid">
@@ -35,7 +37,9 @@
 
                 <div class="content">
                     <h1>Servicios</h1>
-                    <button type="submit">Agregar servicio</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar servicio
+                    </button>
                 </div>
                 <div class="table">
                     <table class="table">
@@ -55,8 +59,13 @@
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -65,8 +74,13 @@
                                 <td>Thornton</td>
                                 <td>@fat</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
@@ -75,8 +89,13 @@
                                 <td>the Bird</td>
                                 <td>@twitter</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
