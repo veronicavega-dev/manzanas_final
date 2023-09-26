@@ -15,4 +15,20 @@ class AdminController extends Controller
     {
         return view('admin.registroMunicipio');
     }
+    public function registerManzana()
+    {
+        return view('admin.registroManzana');
+    }
+    public function registerServicio()
+    {
+        return view('admin.registroServicio');
+    }
+    public function registerEstablecimiento()
+    {
+        return view('admin.registroEstablecimiento');
+    }
+    public function registerCuidadora()
+    {
+        return view('admin.registroCuidadoras');
+    }
 }

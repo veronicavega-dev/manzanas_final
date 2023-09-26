@@ -31,21 +31,26 @@
             </nav>
 
             <!-- Contenido principal -->
-            <main class="col-md-9 ms-sm-auto col-lg-11 px-md-4">
+            <main class="col-md-3 ms-sm-auto col-lg-11 px-md-1">
 
                 <div class="content">
-                    <h1>Municipios</h1>
-                    <button type="submit">Agregar municipio</button>
+                    <h1>Cuidadoras</h1>
+                    <button type="submit">Agregar cuidadoras</button>
                 </div>
                 <div class="table">
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Codigo</th>
+                                <th scope="col">Tipo documento</th>
+                                <th scope="col">Documento</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Localidad</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Ciudad</th>
                                 <th scope="col">Direccion</th>
-                                <th scope="col">acciones</th>
+                                <th scope="col">Servicio seleccionado</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -53,7 +58,12 @@
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
                                     <a href="">editar</a>
                                     <a href="">eliminar</a>

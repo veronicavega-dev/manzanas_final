@@ -31,11 +31,11 @@
             </nav>
 
             <!-- Contenido principal -->
-            <main class="col-md-9 ms-sm-auto col-lg-11 px-md-4">
+            <main class="col-md-3 ms-sm-auto col-lg-11 px-md-4">
 
                 <div class="content">
-                    <h1>Municipios</h1>
-                    <button type="submit">Agregar municipio</button>
+                    <h1>Servicios</h1>
+                    <button type="submit">Agregar servicio</button>
                 </div>
                 <div class="table">
                     <table class="table">
@@ -43,8 +43,8 @@
                             <tr>
                                 <th scope="col">Codigo</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Localidad</th>
-                                <th scope="col">Direccion</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Categoria</th>
                                 <th scope="col">acciones</th>
                             </tr>
                         </thead>

@@ -34,8 +34,8 @@
             <main class="col-md-9 ms-sm-auto col-lg-11 px-md-4">
 
                 <div class="content">
-                    <h1>Municipios</h1>
-                    <button type="submit">Agregar municipio</button>
+                    <h1>Establecimientos</h1>
+                    <button type="submit">Agregar establecimiento</button>
                 </div>
                 <div class="table">
                     <table class="table">
@@ -43,7 +43,7 @@
                             <tr>
                                 <th scope="col">Codigo</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Localidad</th>
+                                <th scope="col">Responsable</th>
                                 <th scope="col">Direccion</th>
                                 <th scope="col">acciones</th>
                             </tr>
