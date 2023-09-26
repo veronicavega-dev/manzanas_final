@@ -8,7 +8,7 @@
     <title>Manzanitas</title>
     <link rel="icon" href="/asset/anciana.png" type="image/jpeg">
 
-    
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -28,17 +28,17 @@
     </div>
 
 
-    <div class="container-fluid" >
+    <div class="container-fluid">
 
-        <div class="row p-4"  id="navbar">
+        <div class="row p-4" id="navbar">
             <div class="col">
                 <img src="/asset/comunidad.png" alt="">
             </div>
             <div class="col">
                 <b>
-                 <h4>Manzanitas</h4>     
+                    <h4>Manzanitas</h4>
                 </b>
-              
+
             </div>
             <div class="col">
                 <a href="#quienesSomos">
@@ -81,8 +81,8 @@
         </div>
     </div>
 
-    <div class="container-fluid" >
-        <div class="row mt-5" >
+    <div class="container-fluid">
+        <div class="row mt-5">
             <div class="col-2"></div>
             <div class="col-8">
                 <div class="row">
@@ -93,9 +93,9 @@
                             </div>
                         </div>
                     </div>
-    
-                    <div class="col-md-12" id="quienesSomos" >
-                        <div  class="info "  style="margin-top: 11%">
+
+                    <div class="col-md-12" id="quienesSomos">
+                        <div class="info " style="margin-top: 11%">
                             <h3>¿Quiénes Somos?</h3>
                             <p>
                                 Somos un proyecto dedicado a crear espacios especiales en la ciudad llamados "Manzanas
@@ -140,7 +140,7 @@
 
                 <div class="row p-5">
                     <div class="col">
-                        <div class="card"  id="uno">
+                        <div class="card" id="uno">
                             <div class="card-body">
                                 <h5 class="card-title">
                                     <b>
@@ -160,29 +160,83 @@
                         </div>
 
                     </div>
-                        <div class="col" >
-                            <div class="card" style="width: 18rem; color: whith; " id="dos">
+                    <div class="col">
+                        <div class="card" style="width: 18rem; color: whith; " id="dos">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <b>
+                                        Para quienes
+                                        requieren cuidado
+                                        o apoyo
+                                    </b>
+                                </h5>
+                                <p class="card-text" style="font-size: 20px">
+
+                                    Servicios gratuitos para las niñas, los niños, las personas mayores y las personas
+                                    con discapacidad. Aquí promovemos su autonomía y desarrollamos sus capacidades.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-2"></div>
+                <div class="col-8">
+
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="queOfrecemos" class="info">
+                                <h1>
+                                    Encuentra la Manzana del Cuidado más cercana a tu ubicación​
+                                    Conoce los servicios disponibles
+                                </h1>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row p-5">
+                        <div class="col">
+                            <div class="card" id="" style="background-color: #eceaea ; color: black;">
                                 <div class="card-body">
                                     <h5 class="card-title">
                                         <b>
-                                            Para quienes
-                                            requieren cuidado
-                                            o apoyo
+                                            Ubicación
                                         </b>
                                     </h5>
-                                    <p class="card-text" style="font-size: 20px">
-                                        
-                                        Servicios gratuitos para las niñas, los niños, las personas mayores y las personas con discapacidad. Aquí promovemos su autonomía y desarrollamos sus capacidades.
-                                    </p>
+                                    <img src="./asset/mapa.png" class="card-img-top" alt="...">
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" id="" style="background-color: #eceaea ; color: black;">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <b>
+                                            Ubicación
+                                        </b>
+                                    </h5>
+                                    <img src="./asset/mapa.png" class="card-img-top" alt="...">
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </div>
+                    <div class="col-2"></div>
                 </div>
-
             </div>
-            <div class="col-2"></div>
-        </div>
-    </div>
-
 </body>
 
 </html>
@@ -196,15 +250,15 @@
         font-family: Arial, sans-serif;
     }
 
-    #navbar{
-        background-color:#34BE82 ;
+    #navbar {
+        background-color: #34BE82;
         display: flex;
         position: fixed;
         top: 0;
-       left: 0;
-       width: 110%;
-       z-index: 100;
-       padding: 2px;
+        left: 0;
+        width: 110%;
+        z-index: 100;
+        padding: 2px;
 
     }
 
@@ -236,7 +290,7 @@
     }
 
 
-    
+
     .contenedor2 {
         background-image: url('/asset/fam.avif');
         background-size: cover;
@@ -295,15 +349,15 @@
         background: #F2F013;
 
     }
-.card{
-    width: 18rem;
-    border:none;
-    box-shadow:  0px 0px 10px 0px
-}
-.card-title{
-    color: white;
-    text-align: center;
-}
 
+    .card {
+        width: 18rem;
+        border: none;
+        box-shadow: 0px 0px 10px 0px
+    }
 
+    .card-title {
+        color: white;
+        text-align: center;
+    }
 </style>

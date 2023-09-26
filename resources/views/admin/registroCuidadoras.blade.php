@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@extends('components.layouts.formCuidadoras')
+
 
 @section('content')
     <div class="container-fluid">
@@ -35,8 +37,10 @@
 
                 <div class="content">
                     <h1>Cuidadoras</h1>
-                    <button type="submit">Agregar cuidadoras</button>
-                </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Registrar Cuidadoras
+                    </button>
+                 </div>
                 <div class="table">
                     <table class="table">
                         <thead class="thead-dark">
@@ -65,30 +69,56 @@
                                 <td>e</td>
                                 <td>e</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        eliminar
+                                    </button>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
-                                    <a href="">editar</a>
-                                    <a href="">eliminar</a>
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        editar
+                                    </button>
+
+                                    <button type="button" class="btn btn-danger" >
+                                        Eliminar
+                                    </button>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>
