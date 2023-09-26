@@ -41,7 +41,7 @@
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Codigo</th>
+                                <th scope="col">Id</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Localidad</th>
                                 <th scope="col">Direccion</th>
