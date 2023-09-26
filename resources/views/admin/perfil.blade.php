@@ -30,10 +30,19 @@
 
         <!-- Contenido principal -->
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <h2>perfil</h2>
+            <div class="content">
+    
+                <h1>Gestion de manzanas</h1>
+                <p>podras ver tus datos y actualizarlos </p>
+                <i class='bx bxs-edit-alt'></i><a href="">Editar perfil</a>
+            </div>
         </main>
     </div>
 </div>
 
     
 @endsection
+  
+
+
+
