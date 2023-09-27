@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,23 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/admin/perfil', [AdminController::class, 'perfil'])->name('admin.perfil');
+// Route::get('/admin/registroMunicipio', [AdminController::class, 'registerMunicipio'])->name('admin.registroMunicipio');
 Route::get('/admin/registroMunicipio', [AdminController::class, 'registerMunicipio'])->name('admin.registroMunicipio');
+
 Route::get('/admin/registroManzana', [AdminController::class, 'registerManzana'])->name('admin.registroManzana');
 Route::get('/admin/registroServicio', [AdminController::class, 'registerServicio'])->name('admin.registroServicio');
 Route::get('/admin/registroEstablecimiento', [AdminController::class, 'registerEstablecimiento'])->name('admin.registroEstablecimiento');
 Route::get('/admin/registroCuidadoras', [AdminController::class, 'registerCuidadora'])->name('admin.registroCuidadoras');
+Route::get('/ir/formulario', [AdminController::class , 'registroformulario'])->name('registro.formulario');
+Route::get('/admin/edit/{id}', [AdminController::class , 'filtrarEdit'])->name('info.editar');
+
+Route::post('/crear', [PostProducto::class, 'crear'])->name('producto.formulario');
+
+Route::post('/admin/municipio', [AdminController::class , 'guardarFormulario'])->name('guardar.formulario');
+
+Route::patch('/crear/{id}', [AdminController::class, 'guardarCambios'])->name('producto.guardar');
+
+
+
 
 

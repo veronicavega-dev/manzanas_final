@@ -22,15 +22,15 @@
                     </a>
                     <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                             class="fas fa-chart-bar fa-fw me-3"></i><span>Registro de cuidadoras</span></a>
-                    <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-chart-bar fa-fw me-3"></i><span>Reporte</span></a>
+
                 </div>
             </div>
         </nav>
 
         <!-- Contenido principal -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-            <h2>perfil</h2>
+        <main class="col-md-9 ms-sm-auto  mt-5 col-lg-10 px-md-4">
+
+            <h1 class="manzanitas">Welcome to Manzanitas!</h1>
         </main>
     </div>
 </div>
