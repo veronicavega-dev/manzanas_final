@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Servicio extends Model
 {
     use HasFactory;
+    protected $fillable = ['nombre', 'descripccion', 'categoria_id']; // Agregar 'nombre' a la lista de campos fillable
+
 }

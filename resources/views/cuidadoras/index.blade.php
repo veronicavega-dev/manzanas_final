@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@extends('components.layouts.formEstable')
+@extends('cuidadoras.formCuidadoras')
+
 
 @section('content')
     <div class="container-fluid">
@@ -18,11 +19,8 @@
                         </a>
                         <a href="{{ route('admin.registroManzana') }}" class="list-group-item list-group-item-action py-2 ripple"><i
                                 class="fas fa-lock fa-fw me-3"></i><span>Registrar manzana</span></a>
-                                
-                                <a href="{{route('servicio.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
-                                    class="fas fa-chart-line fa-fw me-3"></i><span>Registrar servicio</span></a>
-
-
+                        <a href="{{ route('admin.registroServicio') }}" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-chart-line fa-fw me-3"></i><span>Registrar servicio</span></a>
                         <a href="{{ route('admin.registroEstablecimiento') }}" class="list-group-item list-group-item-action py-2 ripple">
                             <i class="fas fa-chart-pie fa-fw me-3"></i><span>Registro establecimiento</span>
                         </a>
@@ -40,21 +38,28 @@
             </nav>
 
             <!-- Contenido principal -->
-            <main class="col-md-9 ms-sm-auto col-lg-11 px-md-4">
-                <h1>Establecimiento</h1>
+            <main class="col-md-3 ms-sm-auto col-lg-11 px-md-1">
 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Registrar Establecimiento
-                </button>
+                <div class="content">
+                    <h1>Cuidadoras Index xxxxxxxx</h1>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Registrar Cuidadoras
+                    </button>
+                 </div>
                 <div class="table">
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
-                                <th scope="col">Codigo</th>
+                                <th scope="col">Tipo documento</th>
+                                <th scope="col">Documento</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Responsable</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Ciudad</th>
                                 <th scope="col">Direccion</th>
-                                <th scope="col">acciones</th>
+                                <th scope="col">Servicio seleccionado</th>
+                                <th scope="col">Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,7 +67,12 @@
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         editar
@@ -74,10 +84,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         editar
@@ -89,20 +104,26 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>a</td>
+                                <td>b</td>
+                                <td>c</td>
+                                <td>d</td>
+                                <td>e</td>
+                                <td>e</td>
                                 <td>
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         editar
                                     </button>
 
                                     <button type="button" class="btn btn-danger" >
-                                        eliminar
+                                        Eliminar
                                     </button>
                                 </td>
                             </tr>
+
                         </tbody>
                     </table>
                 </div>

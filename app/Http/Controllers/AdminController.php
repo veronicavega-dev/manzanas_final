@@ -51,13 +51,11 @@ class AdminController extends Controller
         ],[
             'nombre.required'=>'nombre requerido',
         ]);
-        
-
-
         $info =Municipio::find($info);
         $info->update($validado);
         session()->flash('status','Post updated success!');
         return redirect()->route('admin.registroMunicipio', $info);
+
         }
     
     

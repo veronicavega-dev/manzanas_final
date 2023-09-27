@@ -18,15 +18,20 @@
                             </a>
                             <a href="{{ route('admin.registroManzana') }}" class="list-group-item list-group-item-action py-2 ripple"><i
                                     class="fas fa-lock fa-fw me-3"></i><span>Registrar manzana</span></a>
-                            <a href="{{ route('admin.registroServicio') }}" class="list-group-item list-group-item-action py-2 ripple"><i
-                                    class="fas fa-chart-line fa-fw me-3"></i><span>Registrar servicio</span></a>
+                                    <a href="{{route('servicio.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
+                                        class="fas fa-chart-line fa-fw me-3"></i><span>Registrar servicio</span></a>
                             <a href="{{ route('admin.registroEstablecimiento') }}" class="list-group-item list-group-item-action py-2 ripple">
                                 <i class="fas fa-chart-pie fa-fw me-3"></i><span>Registro establecimiento</span>
                             </a>
-                            <a href="{{ route('admin.registroCuidadoras') }}" class="list-group-item list-group-item-action py-2 ripple"><i
-                                    class="fas fa-chart-bar fa-fw me-3"></i><span>Registro de cuidadoras</span></a>
+                            <a href="{{route('cuidadoras.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
+                                class="fas fa-chart-bar fa-fw me-3"></i><span>Registro de cuidadoras</span></a>
                             <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
                                     class="fas fa-chart-bar fa-fw me-3"></i><span>Reporte</span></a>
+
+                                    <a href="{{route('categoria.index')}}">
+                                        <i
+                                    class="fas fa-chart-bar fa-fw me-3"></i><span>categoria</span>
+                                    </a>
                         </div>
                     </div>
                 </nav>
@@ -66,7 +71,7 @@
         </tbody>
 
 
-        
+
     </table>
 
 
@@ -104,30 +109,7 @@
     </div>
 
 
-        <!-- Modal para Editar Municipio -->
-        <div class="modal fade" id="EditarMunicipio" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Editar municipio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        @if (isset($infoMunicipio))
-                        <form method="post" action="{{ route('guardar.formulario') }}">
-                            @csrf
-                            <input type="hidden" name="id" value="{{ $infoMunicipio->id }}">
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" name="nombre" value="{{ $infoMunicipio->nombre }}" required>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                        </form>
-                    @endif
-                    </div>
-                </div>
-            </div>
-        </div>
+
 </main>
 @endsection
 

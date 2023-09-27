@@ -20,9 +20,14 @@
                     <a href="{{ route('admin.registroEstablecimiento') }}" class="list-group-item list-group-item-action py-2 ripple">
                         <i class="fas fa-chart-pie fa-fw me-3"></i><span>Registro establecimiento</span>
                     </a>
-                    <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
-                            class="fas fa-chart-bar fa-fw me-3"></i><span>Registro de cuidadoras</span></a>
+                    <a href="{{route('cuidadoras.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
+                        class="fas fa-chart-bar fa-fw me-3"></i><span>Registro de cuidadoras</span></a>
 
+
+                        <a href="{{route('categoria.index')}}">
+                            <i
+                        class="fas fa-chart-bar fa-fw me-3"></i><span>categoria</span>
+                        </a>
                 </div>
             </div>
         </nav>

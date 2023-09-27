@@ -2,12 +2,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Servicio</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Categoria de Servicio</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label for="tipoDocumento" class="form-label">Tipo documento</label>
+                    <label for="tipoDocumento" class="form-label">Nombre</label>
                     <input type="text" class="form-control" id="tipoDocumento" name="tipoDocumento">
                 </div>
                 <div class="mb-3">
