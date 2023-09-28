@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Categoria;
+use App\Models\Establecimiento;
+
 use App\Models\Servicio;
 
 
@@ -22,8 +24,10 @@ class httpServicios extends Controller
     public function index()
     {   
         $categorias = Categoria::all();
+        $establecimiento = Establecimiento::all();
         $servicio = Servicio::get();
-        return view('servicios.index', compact('categorias') ,['servicio' => $servicio]);
+
+        return view('servicios.index', compact('categorias', 'establecimiento') ,['servicio' => $servicio]);
     }
     
     /**
@@ -39,7 +43,6 @@ class httpServicios extends Controller
         ]);
     
         Servicio::create($validado);
-    
         $categorias = Categoria::all();
         $servicio = Servicio::get()->reverse();
     
