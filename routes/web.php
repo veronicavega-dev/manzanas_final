@@ -38,6 +38,10 @@ Route::get('/admin/edit/{id}', [AdminController::class , 'filtrarEdit'])->name('
 // -------------------------------------------------------------------GET DE CUIDADORAS
 Route::get('/cuidadoras/index' , [httpCuidadorasController::class , 'index'])->name('cuidadoras.index');
 
+// ariane
+
+Route::get('/serviciosPropuestos',[AdminController::class, 'solicitud'])->name('solicitud');
+Route::get('/ubicacion' , [AdminController::class, 'localidad'])->name('localidad');
 
 // ---------------------------------------------------------GET DE CATEGOTIA SERVICIOS
 Route::get('/categoria/index' , [httpCategoriaServicios::class , 'index'])->name('categoria.index');

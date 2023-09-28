@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+    public function solicitud (){
+        return view('serviciosPropuestos');
+    }
+    public function localidad(){
+        return  view('ubicacion');
+    }
     public function perfil()
     {
         return view('admin.perfil');
