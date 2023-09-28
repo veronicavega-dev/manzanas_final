@@ -90,12 +90,9 @@
 
     </div>
 
-    <section class="contenedor2">
-        <hr>
-        <img src="/asset/familia.jpg" alt="">
-    </section>
 
-    <section class="somos">
+
+    <section class="somos" id="quienesSomos">
         <hr>
         <h1 class="text-center font-weight-bold ">¿Quienes somos?</h1>
         <p class="text-justify font-italic h4">
@@ -109,13 +106,17 @@
             forma
             completamente gratuita.
         </p>
-        <div class="somosimg">
-            <img src="/asset/somos.jpg" alt="">
-        </div>
+        <section class="contenedor2">
+            <hr>
+            <img src="/asset/familia.jpg" alt="">
+        </section>
+
     </section>
 
+    
 
-    <section class="servicios">
+
+    <section class="servicios" id="queOfrecemos">
         <hr>
         <h1 class="text-center font-weight-bold ">¿Que Ofrecemos?</h3>
             <p class="text-justify font-italic h4">
@@ -182,6 +183,7 @@
         padding: 0;
         margin: 0;
         font-family: 'Quicksand', sans-serif;
+        color: black;
     }
 
     #map {
@@ -213,20 +215,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid #000;
-        /* Borde de 2 píxeles sólido */
-        padding: 20px;
-        /* Espacio alrededor del contenido */
+        padding: 10px;
+        width: 50%;
         text-align: center;
-        /* Centra el contenido horizontalmente */
+        margin-left: 30%;
+
+
     }
 
     /* Estilos para la imagen */
     .contenedor2 img {
-        max-width: 100%;
-        /* Ajusta el tamaño de la imagen al contenedor */
+        border-radius: 10px ;
+        max-width: 80%;
         height: auto;
-        /* Mantiene la proporción de aspecto de la imagen */
+        box-shadow: 0px 0px 10px 0px #8f8f8f
+    }
+    .contenedor2 img:hover{
+        box-shadow: 0px 0px 10px 0px #34BE82
+
+        
     }
 
 

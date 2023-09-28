@@ -3,7 +3,10 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\httpCuidadorasController;
 use App\Http\Controllers\httpCategoriaServicios;
+use App\Http\Controllers\httpEstablecimientos;
+
 use App\Http\Controllers\httpServicios;
+
 
 
 
@@ -32,7 +35,6 @@ Route::get('/admin/perfil', [AdminController::class, 'perfil'])->name('admin.per
 Route::get('/admin/registroMunicipio', [AdminController::class, 'registerMunicipio'])->name('admin.registroMunicipio');
 Route::get('/admin/registroManzana', [AdminController::class, 'registerManzana'])->name('admin.registroManzana');
 Route::get('/admin/registroServicio', [AdminController::class, 'registerServicio'])->name('admin.registroServicio');
-Route::get('/admin/registroEstablecimiento', [AdminController::class, 'registerEstablecimiento'])->name('admin.registroEstablecimiento');
 Route::get('/ir/formulario', [AdminController::class , 'registroformulario'])->name('registro.formulario');
 Route::get('/admin/edit/{id}', [AdminController::class , 'filtrarEdit'])->name('info.editar');
 // -------------------------------------------------------------------GET DE CUIDADORAS
@@ -47,6 +49,8 @@ Route::get('/ubicacion' , [AdminController::class, 'localidad'])->name('localida
 Route::get('/categoria/index' , [httpCategoriaServicios::class , 'index'])->name('categoria.index');
 //servicios
 Route::get('/servicios/index' , [httpServicios::class , 'index'])->name('servicio.index');
+//establecimiento
+Route::get('/establecimienti/index' , [httpEstablecimientos::class , 'index'])->name('establecimiento.index');
 
 // --------------------------POST  
 //MUNICIPIO
@@ -56,6 +60,14 @@ Route::post('/admin/municipio', [AdminController::class , 'guardarFormulario'])-
 Route::post('/servcios/add' , [httpCategoriaServicios::class ,'create'])->name('categoria.servicio');
 // Servicios
 Route::post('/crear/servicio' , [httpServicios::class , 'create'])->name('servicio.agregar');
+
+//Establecimiento
+Route::post('/establecimeinto/add', [httpEstablecimientos::class , 'create'])->name('establecimiento.agregar');
+
+
+//cuidadoras 
+Route::post('/cuidadoras/add', [httpCuidadorasController::class , 'create'])->name('cuidadoras.agregar');
+
 
 
 

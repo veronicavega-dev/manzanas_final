@@ -4,7 +4,7 @@
 
 @section('content') 
                 <!-- Navbar vertical -->
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                {{-- <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
                     <div class="position-sticky">
                         <div class="list-group list-group-flush">
                             <a href="{{ route('admin.perfil') }}" class="list-group-item list-group-item-action py-2 ripple"
@@ -33,6 +33,9 @@
                         </div>
                     </div>
                 </nav>
+ --}}
+
+ @include('components.layouts.barraNav')
 
 
 

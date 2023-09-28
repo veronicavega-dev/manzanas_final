@@ -4,7 +4,7 @@
 
 @section('content') 
                 <!-- Navbar vertical -->
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                {{-- <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
                     <div class="position-sticky">
                         <div class="list-group list-group-flush">
                             <a href="{{ route('admin.perfil') }}" class="list-group-item list-group-item-action py-2 ripple"
@@ -20,7 +20,7 @@
                                     <a href="{{route('servicio.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
                                         class="fas fa-chart-line fa-fw me-3"></i><span>Registrar servicio</span></a>
                                         
-                            <a href="{{ route('admin.registroEstablecimiento') }}" class="list-group-item list-group-item-action py-2 ripple">
+                            <a href="{{ route('establecimiento.index') }}" class="list-group-item list-group-item-action py-2 ripple">
                                 <i class="fas fa-chart-pie fa-fw me-3"></i><span>Registro establecimiento</span>
                             </a>
                             <a href="{{route('cuidadoras.index')}}" class="list-group-item list-group-item-action py-2 ripple"><i
@@ -33,8 +33,9 @@
                                     </a>
                         </div>
                     </div>
-                </nav>
+                </nav> --}}
 
+                @include('components.layouts.barraNav')
 
 
 <div class="container-fluid">

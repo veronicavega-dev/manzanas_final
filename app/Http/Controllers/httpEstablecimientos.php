@@ -13,18 +13,35 @@ class httpEstablecimientos extends Controller
      */
     public function index()
     {   
-        $establecimiento = Establecimiento::all();
+        $establecimiento = Establecimiento::get();
         $servicio = Servicio::all();
 
-        return view('servicios.index', compact('categorias', 'establecimiento') ,['servicio' => $servicio]);
+        return view('establecimientos.index', compact('servicio') ,['establecimiento' => $establecimiento]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+
+        // Valida los datos del formulario
+
+        $validado = $request->validate([
+            'nombre' => ['required'],
+            'responsable' => ['required'],
+            'direccion' => ['required'],
+            'servicio_id' => ['required'],
+        ]);
+    
+        Establecimiento::create($validado);
+        $establecimiento = Establecimiento::get();
+        $servicio = Servicio::get()->reverse();
+    
+        // // Redirige a la vista de índice con las variables necesarias
+        return view('establecimientos.index', compact( 'servicio') ,['establecimiento' => $establecimiento]);
+
+    
     }
 
     /**

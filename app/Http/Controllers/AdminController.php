@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Cuidadora;
+use App\Models\Servicio;
 use App\Models\Municipio;
 
 
@@ -10,8 +11,13 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function solicitud (){
-        return view('serviciosPropuestos');
+        $busqueda = Cuidadora::get();
+        $servicio = Servicio::all();
+
+        //
+        return view('serviciosPropuestos', compact('servicio') , ['busqueda'=> $busqueda]);
     }
+
     public function localidad(){
         return  view('ubicacion');
     }
@@ -88,10 +94,7 @@ class AdminController extends Controller
         return view('admin.registroServicio');
     }
     // -------------------------------------------------- servicios-
-    public function registerEstablecimiento()
-    {
-        return view('admin.registroEstablecimiento');
-    }
+
     //  ----------------------------------------------- establecimiento-
     public function registerCuidadora()
     {
