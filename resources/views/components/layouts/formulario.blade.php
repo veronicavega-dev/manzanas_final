@@ -39,18 +39,14 @@
             </div>
     
         </div>
-        </form>
-
-
         <div class="modal-footer">
           <button type="sub" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
           <input type="submit" value="guardar">
         </div>
-
+        </form>
 
       </div>
     </div>
   </div>
 
 
-  {{-- 'admin.municipio' --}}

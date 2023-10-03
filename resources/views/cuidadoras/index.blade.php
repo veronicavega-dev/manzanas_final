@@ -40,7 +40,7 @@
 
 
             <!-- Contenido principal -->
-            <h1>Bitacora de Registro de Solicitudes de servicio</h1>
+            <h1>Cuidadoras de Manzanitas</h1>
 
             <main class="col-md-3">
 
@@ -107,72 +107,100 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Categoria de Servicio</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="{{route('cuidadoras.agregar')}}" method="POST">
-                    @csrf  
+                <form action="{{ route('cuidadoras.agregar') }}" method="POST">
+                    @csrf
 
                     <div class="modal-body">
                         <div class="mb-3">
-                            <label for="tipoDocumento" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="tipoDocumento" name="tipoDocumento">
+                            <label for="tipoDoc" class="form-label">Tipo de documento</label>
+                            <select name="tipoDoc" class="form-control">
+                                <option value="Cedula Ciudadana">Cédula Ciudadanía</option>
+                                <option value="Cedula Extranjería">Cédula Extranjería</option>
+                            </select>
+                            @error('tipoDoc')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
                         <div class="mb-3">
-                            <label for="documento" class="form-label">Documento</label>
+                            <label for="documento" class="form-label">Número de Documento</label>
                             <input type="text" class="form-control" id="documento" name="documento">
+                            @error('documento')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-        
+
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre">
-                        </div>
-                        <div class="mb-3">
-                            <label for="apellido" class="form-label">Apellido</label>
+                            <label for="apellido" class="form-label">Nombre completo</label>
                             <input type="text" class="form-control" id="apellido" name="apellido">
-        
+                            @error('apellido')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-        
+
                         <div class="mb-3">
-                            <label for="telefono" class="form-label">Telefono</label>
+                            <label for="telefono" class="form-label">Teléfono</label>
                             <input type="text" class="form-control" id="telefono" name="telefono">
-        
+                            @error('telefono')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-        
+
                         <div class="mb-3">
                             <label for="correo" class="form-label">Correo</label>
                             <input type="email" class="form-control" id="correo" name="correo">
+                            @error('correo')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-            
+
                         <div class="mb-3">
                             <label for="ciudad" class="form-label">Ciudad</label>
                             <input type="text" class="form-control" id="ciudad" name="ciudad">
+                            @error('ciudad')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-            
+
                         <div class="mb-3">
-                            <label for="direccion" class="form-label">Direccion</label>
+                            <label for="direccion" class="form-label">Dirección</label>
                             <input type="text" class="form-control" id="direccion" name="direccion">
-            
+                            @error('direccion')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-            
+
                         <div class="mb-3">
-                            <div class="col-md-6">
-                                <label for="servicio" class="form-label">Servicio seleccionado</label>
-                                <select class="form-select" id="servicio" name="servicio">
-                                    <option value="opcion1">Opción 1</option>
-                                    <option value="opcion2">Opción 2</option>
-                                    <option value="opcion3">Opción 3</option>
-                                </select>
-                            </div>
+                            <label for="ocupacion" class="form-label">Ocupación</label>
+                            <input type="text" class="form-control" id="ocupacion" name="ocupacion">
+                            @error('ocupacion')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-            
+
                         <div class="mb-3">
-                            <div class="col-md-6">
-                                <label for="servicio" class="form-label">Servicio seleccionado</label>
-                                <select class="form-select" id="servicio" name="servicio">
-                                    <option value="opcion1">Opción 1</option>
-                                    <option value="opcion2">Opción 2</option>
-                                    <option value="opcion3">Opción 3</option>
-                                </select>
-                            </div>
+                            <label for="servicioInteres" class="form-label">Servicio de Interés</label>
+                            <input type="text" class="form-control" id="servicioInteres" name="servicioInteres">
+                            @error('servicioInteres')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <div class="mb-3">
+                            <label for="servicio_id" class="form-label">Categoría</label>
+                            <select name="servicio_id" class="form-control">
+                                @foreach ($servicio as $x)
+                                    <option value="{{ $x->id }}">{{ $x->nombre }}</option>
+                                @endforeach
+                            </select>
+                            @error('servicio_id')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit">Guardar</button>
                     </div>
                 </form>
 

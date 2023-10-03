@@ -4,6 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\httpCuidadorasController;
 use App\Http\Controllers\httpCategoriaServicios;
 use App\Http\Controllers\httpEstablecimientos;
+use App\Http\Controllers\httpManzana;
+
+
 
 use App\Http\Controllers\httpServicios;
 
@@ -33,10 +36,11 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/admin/perfil', [AdminController::class, 'perfil'])->name('admin.perfil');
 Route::get('/admin/registroMunicipio', [AdminController::class, 'registerMunicipio'])->name('admin.registroMunicipio');
-Route::get('/admin/registroManzana', [AdminController::class, 'registerManzana'])->name('admin.registroManzana');
 Route::get('/admin/registroServicio', [AdminController::class, 'registerServicio'])->name('admin.registroServicio');
 Route::get('/ir/formulario', [AdminController::class , 'registroformulario'])->name('registro.formulario');
 Route::get('/admin/edit/{id}', [AdminController::class , 'filtrarEdit'])->name('info.editar');
+Route::get('/admin/registroManzana', [httpManzana::class, 'index'])->name('manzana.agregar');
+
 // -------------------------------------------------------------------GET DE CUIDADORAS
 Route::get('/cuidadoras/index' , [httpCuidadorasController::class , 'index'])->name('cuidadoras.index');
 
@@ -63,7 +67,7 @@ Route::post('/crear/servicio' , [httpServicios::class , 'create'])->name('servic
 
 //Establecimiento
 Route::post('/establecimeinto/add', [httpEstablecimientos::class , 'create'])->name('establecimiento.agregar');
-
+Route::post('/manzana/add', [httpManzana::class, 'create'])->name('manzana.add');
 
 //cuidadoras 
 Route::post('/cuidadoras/add', [httpCuidadorasController::class , 'create'])->name('cuidadoras.agregar');

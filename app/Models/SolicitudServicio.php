@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Manzana extends Model
+class SolicitudServicio extends Model
 {
     use HasFactory;
-    protected $fillable =['nombre','localidad','direccion','municipio_id'];
 }

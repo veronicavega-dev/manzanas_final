@@ -228,7 +228,9 @@
         border-radius: 10px ;
         max-width: 80%;
         height: auto;
-        box-shadow: 0px 0px 10px 0px #8f8f8f
+        box-shadow: 0px 0px 10px 0px #8f8f8f;
+        margin-top:-20px;
+
     }
     .contenedor2 img:hover{
         box-shadow: 0px 0px 10px 0px #34BE82
@@ -278,7 +280,7 @@
     }
 
     #dos {
-        background: #F2F013;
+        /* background: #F2F013; */
 
     }
 
@@ -297,7 +299,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         padding: 20px;
         border-radius: 8px
             /* Espacio alrededor de la imagen */
@@ -330,9 +332,18 @@
         margin: 10px;
         padding: 10px;
         border-radius: 8px;
-        border: 2px solid #00FF00;
+        box-shadow: 0px 0px 20px 0px rgb(196, 190, 190);
         /* Borde verde */
         text-align: center;
+    }
+    .card:hover{
+        cursor: pointer;;
+        box-shadow: 0px 0px 20px 0px #34be8270;
+        background-color: #34be826b;
+        color: white;
+        font-weight: 800;
+
+
     }
 
     .card img {
@@ -350,6 +361,7 @@
         margin-top: 10px;
         font-size: 1rem;
     }
+    
 
     .btn {
         font-style: bold;
