@@ -1,0 +1,45 @@
+-Instalar el proyecto
+laravel new [nombre del proyecto]
+
+
+-Instala el login con bootstrap
+composer require laravel/ui
+php artisan ui bootstrap --auth
+npm install 
+npm run dev
+
+
+-Instala las dependencias de javscript
+npm install 
+
+
+
+-Se usa para ver los compilar los activos cambios en tiempo real
+npm run dev
+
+
+-Crear una migracion con el modelo.
+-Debe estar el nombre en singular y la primera letra en mayuscula.
+-Con la bandera "-m" se crea la migración
+php artisan make:model [nombre de la tabla] -m
+
+
+-Corre todas las migraciones
+php artisan migrate
+
+
+-Elimina las tablas y las vuelve a crear
+php artisan migrate:fresh
+
+
+-Verifica el estado de las migracines
+php artisan migrate:status
+
+-Crear un controlador.
+-Debe estar el nombre en singular y la primera letra en mayuscula y al final se le agrega la palabra controller.
+-Ejemplo UserController o StudentController.
+php artisan make:controller [nombre del controlador]
+
+
+creacion de model, vistas, controller y rutas
+modelo de Producto variable protegida protected $guarded = ['id'];
